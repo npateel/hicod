@@ -1,0 +1,19 @@
+{
+    "parameters info": {
+        "input": "data/arabidopsis_thaliana.fa",
+        "k": 27,
+        "output prefix": "data/arabidopsis_thaliana_contigs"
+    },
+    "basic info": {
+        "vertex count": 128182
+    },
+    "contigs info": {
+        "maximal unitig count": 19,
+        "vertex count in the maximal unitigs": 128182,
+        "shortest maximal unitig length": 27,
+        "longest maximal unitig length": 26350,
+        "sum maximal unitig length": 128676,
+        "avg. maximal unitig length": 6772,
+        "_comment": "lengths are in bases"
+    }
+}
