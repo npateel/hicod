@@ -1,0 +1,8 @@
+wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_25/gencode.v25.pc_transcripts.fa.gz
+gunzip gencode.v25.pc_transcripts.fa.gz
+
+wget "https://www.ncbi.nlm.nih.gov/projects/r_gencoll/ftp_service/nph-gc-ftp-service.cgi/?HistoryId=MCID_625dafb8f89ed273117e9a7a&QueryKey=1&ReleaseType=RefSeq&FileType=GENOME_FASTA&Flat=true" -O
+tar -xf genome_assemblies_genome_fasta.tar
+gunzip ncbi-genomes-2022-04-18/GCF_000001405.26_GRCh38_genomic.fna.gz
+
+wget https://zenodo.org/record/995689/files/bacterial.genome.fixed.fa -O bacterial.genome.fixed.fa
