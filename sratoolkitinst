@@ -2,11 +2,8 @@ wget --output-document sratoolkit.tar.gz http://ftp-trace.ncbi.nlm.nih.gov/sra/s
 tar -vxzf sratoolkit.tar.gz
 export PATH=$PATH:$PWD/sratoolkit.2.11.2-ubuntu64/bin/
 vdb-config -i
-
-fastq-dump -O reads SRR1215997
-fastq-dump -O reads SRR5833294
-fastq-dump -O reads SRR5901135
-
-sed -n '1~4s/^@/>/p;2~4p' reads/SRR1215997.fastq > SRR1215997.fasta
-sed -n '1~4s/^@/>/p;2~4p' reads/SRR5833294.fastq > SRR5833294.fasta
-sed -n '1~4s/^@/>/p;2~4p' reads/SRR5901135.fastq > SRR5901135.fasta
+rm sratoolkit.tar.gz 
+mkdir reads
+sratoolkit.2.11.2-ubuntu64/bin/fastq-dump --fasta 60 -O reads SRR1215997
+sratoolkit.2.11.2-ubuntu64/bin/fastq-dump --fasta 60 -O reads SRR5833294
+sratoolkit.2.11.2-ubuntu64/bin/fastq-dump --fasta 60 -O reads SRR5901135
