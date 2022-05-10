@@ -1,0 +1,9 @@
+wget --output-document sratoolkit.tar.gz http://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
+tar -vxzf sratoolkit.tar.gz
+export PATH=$PATH:$PWD/sratoolkit.2.11.2-ubuntu64/bin/
+vdb-config -i
+rm sratoolkit.tar.gz 
+mkdir reads
+sratoolkit.2.11.2-ubuntu64/bin/fastq-dump --fasta 60 -O reads SRR1215997
+sratoolkit.2.11.2-ubuntu64/bin/fastq-dump --fasta 60 -O reads SRR5833294
+sratoolkit.2.11.2-ubuntu64/bin/fastq-dump --fasta 60 -O reads SRR5901135
