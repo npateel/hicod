@@ -1,0 +1,8 @@
+git clone git@github.com:COMBINE-lab/pufferfish.git
+cd pufferfish
+mkdir build
+cd build
+../../cmake-3.23.1-linux-x86_64/bin/cmake  -D CMAKE_CXX_COMPILER=/opt/local/stow/gcc-9.3.0/bin/g++ CMAKE_C_COMPILER=/opt/local/stow/gcc-9.3.0/bin/gcc ../
+../../cmake-3.23.1-linux-x86_64/bin/cmake  ../
+
+make
